@@ -11,6 +11,7 @@
         <module>eureka-server</module>
         <module>eureka-client</module>
         <module>service-ribbon</module>
+        <module>feign-client</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -58,6 +59,7 @@
             <optional>true</optional>
         </dependency>
 
+        <!-- 监控 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -96,6 +98,18 @@
                 <configuration>
                     <skip>true</skip>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
