@@ -12,6 +12,8 @@
         <module>eureka-client</module>
         <module>service-ribbon</module>
         <module>feign-client</module>
+        <module>web-app-api</module>
+        <module>api-getway</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
